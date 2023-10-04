@@ -28,7 +28,7 @@ module.exports = (config, server) => {
 
   server.post({ path: '/_search' },
     middleware,
-    (req, res) => {
+    (req, res, next) => {
       const queryBody = config.queryProcessor(req.body || {}, req, res);
       const indices = (config.indicesProcessor || (() => config.index))(req, res);
       if (res.statusCode !== 200) return res;
@@ -37,5 +37,6 @@ module.exports = (config, server) => {
         if (config.responseBodyProcessor) body = config.responseBodyProcessor(req, res, body);
         res.send(body);
       });
+      return next();
     });
 };

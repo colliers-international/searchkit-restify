@@ -1,6 +1,10 @@
 {
   "name": "@colliers-international/searchkit-restify",
+<<<<<<< HEAD
   "version": "0.6.4",
+=======
+  "version": "1.6.3",
+>>>>>>> origin/feature/DISC-615
   "description": "Elasticsearch restify middleware modeled after searchkit-express",
   "main": "index.js",
   "scripts": {
@@ -8,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/REscour/searchkit-restify.git"
+    "url": "git+https://github.com/colliers-international/searchkit-restify.git"
   },
   "keywords": [
     "searchkit",
@@ -17,9 +21,9 @@
   "author": "REscour, Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/REscour/searchkit-restify/issues"
+    "url": "https://github.com/colliers-international/searchkit-restify/issues"
   },
-  "homepage": "https://github.com/REscour/searchkit-restify#readme",
+  "homepage": "https://github.com/colliers-international/searchkit-restify#readme",
   "devDependencies": {
     "restify": "^4.3.0",
     "tape": "^4.6.2"

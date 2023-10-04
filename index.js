@@ -28,7 +28,7 @@ module.exports = (config, server) => {
 
   server.post({ path: '/_search' },
     middleware,
-    (req, res) => {
+    async (req, res) => {
       const queryBody = config.queryProcessor(req.body || {}, req, res);
       const indices = (config.indicesProcessor || (() => config.index))(req, res);
       if (res.statusCode !== 200) return res;

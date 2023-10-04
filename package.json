@@ -1,10 +1,6 @@
 {
   "name": "@colliers-international/searchkit-restify",
-<<<<<<< HEAD
   "version": "0.6.4",
-=======
-  "version": "1.6.3",
->>>>>>> origin/feature/DISC-615
   "description": "Elasticsearch restify middleware modeled after searchkit-express",
   "main": "index.js",
   "scripts": {
